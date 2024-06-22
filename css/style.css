@@ -60,9 +60,57 @@ body{
     border-radius: 10px;
     width: auto;
 }
+.main-cards{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.subtitle-main{
+    text-align: center;
+    color: rgb(25, 25, 53);
+    margin: 40px 0;
+}
+.cards{
+    display: flex;
+    gap: 56px;
+}
+
+.cards-items{
+  background-color: rgb(25, 25, 53);
+  width: 180px;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgb(25, 25, 53,0.87);
+
+}
+
+.cards-items img{
+    width: 60%;
+    height: 150px;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  justify-content: center;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.cards-items h3, .cards-items h4{
+    color: #fff;
+    padding: 8px 8px 0 8px;
+}
+
+    
+
 
 @media (max-width: 717px) {
-    .site-main img {
+    .site-main .image-principal {
       width: 300px; /* Define a nova largura da imagem */
     }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
   }
