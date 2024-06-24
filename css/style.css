@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
+    
     
 }
 
@@ -36,6 +38,7 @@ body{
 .menu-list2{
     gap: 5px;
     margin-left: 2px;
+    margin-right: 10px;
 }
 .menu-list a{
     color: #fff;
@@ -48,6 +51,11 @@ body{
     transition: 0.45s;
     cursor: pointer;
 }
+.site{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 .site-main{
     display: flex;
@@ -55,8 +63,9 @@ body{
     align-items: center;  
     flex-direction: column;
     margin-top: 24px;
+    flex-grow: 1;
 }
-.site-main img{
+.site-main .image-principal{
     border-radius: 10px;
     width: auto;
 }
@@ -98,27 +107,88 @@ body{
     color: #fff;
     padding: 8px 8px 0 8px;
 }
-
-.image-list {
-    padding: 50px;
-    list-style: none;
-    height: 100vh;
-    display: grid;
-    /* gap: 50px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-auto-flow: row; */
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr); /* Originalmente estava incorreto */
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+.main-grid h2{
+    text-align: center;
+    color: rgb(25, 25, 53);
+    margin: 40px 0 10px 0;
 
 
 }
+.image-list {
+    padding: 30px;
+    list-style: none;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
 .image-item img{
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border-radius: 8px;
 }
+
+.image-item a{
+    cursor: pointer;
+}
+
+.image-item:hover{
+    box-shadow: 5px 5px 8px rgb(110, 180, 70);
+    transition: 0.5s;
+}
+
+.site-footer{
+    display: flex;
+    background-color: rgb(25, 25, 53);
+    color: #fff;
+    justify-content: center;
+}
+
+.site-form{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+}
+.site-form input{
+    border-radius: 16px;
+}
+
+.linha-footer{
+    margin: 20px 0;
+    padding: 1px;
+    width: 0.5px;
+    height: auto;
+    background-color: #fff;
+}
+
+.lado2{
+    padding: 30px;
+}
+
+
+
+.button-form{
+    margin-top: 6px;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: rgb(25, 25, 53);
+    cursor: pointer;
+}
+
+.button-form:hover{
+    background-color: steelblue;
+    color: #fff;
+    transition: 0.4s;
+}
+
 
 
 @media (max-width: 1100px){
@@ -148,6 +218,24 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .site-footer{
+        flex-direction: column;
+    }
+
+    .linha-footer{
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .site-form{
+        justify-content: center;
+        align-items: center;
+    }
+    input, button{
+        width: 60%;
     }
 
   }
