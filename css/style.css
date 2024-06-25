@@ -138,8 +138,33 @@ body{
 }
 
 .image-item:hover{
-    box-shadow: 5px 5px 8px rgb(110, 180, 70);
     transition: 0.5s;
+}
+ #boston:hover{
+    box-shadow: 5px 5px 8px rgb(110, 180, 70);
+}
+
+#lakers:hover{
+    box-shadow: 5px 5px 8px rgb(253, 231, 35);
+}
+#warriors:hover{
+    box-shadow: 5px 5px 8px rgb(61, 144, 211);
+}
+#bulls:hover{
+    box-shadow: 5px 5px 8px rgb(243, 71, 65);
+}
+#preto:hover{
+    box-shadow: 5px 5px 8px rgb(13, 17, 11);
+}
+#detroit:hover{
+    box-shadow: 5px 5px 8px rgb(6, 43, 78);
+    
+}
+#phila:hover{
+    box-shadow: 5px 5px 8px rgb(14, 58, 255);
+}
+#denver:hover{
+    box-shadow: 5px 5px 8px rgb(13, 60, 104);
 }
 
 .site-footer{
@@ -196,7 +221,7 @@ body{
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         grid-auto-flow: row;
         justify-content: center;
-        grid-template-columns: repeat(2,1fr); /* Originalmente estava incorreto */
+        grid-template-columns: repeat(2,1fr); 
         grid-template-rows: repeat(4, 1fr);
         gap: 10px; 
     }
@@ -209,7 +234,7 @@ body{
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         grid-auto-flow: row;
         justify-content: center;
-        grid-template-columns: 1fr; /* Originalmente estava incorreto */
+        grid-template-columns: 1fr; 
         grid-template-rows: repeat(9, 1fr);
         gap: 10px; 
     }
@@ -222,6 +247,7 @@ body{
 
     .site-footer{
         flex-direction: column;
+        overflow: hidden;
     }
 
     .linha-footer{
